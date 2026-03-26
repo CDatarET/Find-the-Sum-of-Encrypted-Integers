@@ -11,10 +11,7 @@ public class Solution {
     }
     public int SumOfEncryptedInt(int[] nums) {
         int sum = 0;
-        for(int i = 0; i < nums.Length; i++){
-            nums[i] = encrypt(nums[i]);
-            sum += nums[i];
-        }
+        for(int i = 0; i < nums.Length; i++) sum += encrypt(nums[i]);
         return(sum);
     }
 }
